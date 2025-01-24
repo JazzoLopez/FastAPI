@@ -1,0 +1,17 @@
+"""
+SUMA DE DOS NUMERO Y OPERACIONES BASICAS 
+"""
+
+VALUE_1 = 2
+VALUE_2 = 3
+RESULT = VALUE_1 + VALUE_2
+print(RESULT)
+
+if RESULT % 2 == 0 :
+    print("Es par")
+else:
+    print("Es impar")
+SUMA = VALUE_1 + VALUE_2
+RESTA = VALUE_1 - VALUE_2
+MULTIPLICACION = VALUE_1 * VALUE_2
+DIVISION = VALUE_1 / VALUE_2

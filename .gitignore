@@ -1,0 +1,53 @@
+# Entornos virtuales
+venv/
+.env/
+*.env
+
+# Archivos de configuración de Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Configuración de herramientas de desarrollo
+*.vscode/
+.idea/
+
+# Archivos de logs
+*.log
+logs/
+
+# Archivos creados por el sistema operativo
+.DS_Store
+Thumbs.db
+
+# Archivos de bases de datos locales
+*.sqlite3
+
+# Archivos de compilación
+build/
+dist/
+*.egg-info/
+
+# Archivos de cobertura de pruebas
+.coverage
+htmlcov/
+*.cover
+.cache
+
+# Archivos de Docker
+docker-compose.override.yml
+.dockerignore
+
+# Otros archivos sensibles o temporales
+*.swp
+*.bak
+*.tmp
+
+# Dependencias instaladas por pip
+*.egg
+pip-log.txt
+
+# Archivos creados por editores
+*.sublime-project
+*.sublime-workspace
