@@ -51,3 +51,6 @@ pip-log.txt
 # Archivos creados por editores
 *.sublime-project
 *.sublime-workspace
+
+
+!requirements.txt
