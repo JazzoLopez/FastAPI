@@ -63,6 +63,15 @@ async def delete_user(id: UUID):
         status_code=404, detail=f"Error al eliminar, el id {id} no fue encontrado"
     )
 
-@app.put("api/users/{id}")
-async def updatE_user(id:UUID, user:User):
-    pass
+
+@app.put("/api/users/{id}")
+async def update_user(id: UUID, user: User):
+    for idx, existing_user in enumerate(db):
+        if existing_user.id == id:
+            # Actualizar los campos del usuario existente con los nuevos datos
+            db[idx].firstName = user.firstName
+            db[idx].lastName = user.lastName
+            db[idx].genre = user.genre
+            db[idx].role = user.role
+            return {"message": f"User with id {id} updated successfully"}
+    raise HTTPException(status_code=404, detail=f"User with id {id} not found")
